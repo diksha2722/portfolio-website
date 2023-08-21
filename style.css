@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet&family=Josefin+Sans:ital,wght@1,300&family=Poppins&family=Raleway&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+.sidebar{
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 100vh;
+    transition: transform 0.2s ease-in;
+    font-family: 'Raleway', sans-serif;
+}
+
+.sidebar nav{
+    padding: 19px;
+    padding-top: 50px;
+}
+
+.sidebar nav li{
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    list-style: none;
+    font-size: 20px;
+    padding: 35px 10px;
+}
+
+.sidebar nav li a:hover{
+    color: rgb(209, 115, 209);
+}
+
+.sidebar nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+.main{
+    background-color: black;
+    width: 90vw;
+}
+
+.container{
+    /* background-color: rgb(238, 233, 238); */
+    display: flex;
+}
+
+.infocontainer{
+    /* background-color: black; */
+    color: rgb(209, 115, 209);
+    height: 60vh;
+    width: 80vw;
+    margin: 140px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devinfo{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.hello{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.hello span{
+    color:rgb(209, 115, 209);
+}
+.about{
+    font-family: 'Josefin Sans', sans-serif;
+    /* font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif; */
+    color: rgb(209, 115, 209);
+    font-size: 1.8em;
+}
+
+.moreabout{
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+.buttons{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.btn{
+    padding: 8px;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 25px;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px 15px;
+    cursor: pointer;
+    background-color:rgb(209, 115, 209);
+    color: white;
+    border: 0;
+}
+
+.btn:hover{
+    background-color:white;
+    color: black;
+}
+.devpic img{
+    height: 40vh;
+    margin-top: 25px;
+}
+
+
+
+.contactform{
+    font-size: 20px;
+    padding: 0px 35px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    margin: 55px 55px;
+    /* margin-left: 135px; */
+    
+}
+
+.contactform h1{
+    /* text-align: center; */
+    /* padding: 14px 0; */
+    font-family: 'Raleway', sans-serif;
+}
+
+.contactform form div{
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input{
+    /* width: 25vw; */
+    margin: 6px 0;
+    padding: 3px;
+}
+
+#emailHelp{
+    font-size: 11px;
+    margin: 0 -6px;
+}
+
+#form-check{
+    flex-direction: row;
+}
+
+.btn-sm{
+    font-size: 13px;
+    padding: 5px 10px;
+    margin: 10px;
+}
+
+#form-check input{
+    width: 16px;
+    margin: 3px 1px;
+}
+
+h1{
+    font-family: 'Raleway', sans-serif;
+    margin: 23px;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+    color: rgb(196, 48, 196);
+}
+
+.intro{
+    font-size: 20px;
+    margin:80px;
+}
+
+.intro h1{
+    font-family: 'Raleway', sans-serif;
+}
+
+.intro p{
+    font-family: 'Raleway', sans-serif;
+    margin: 23px;
+}
+
+.skillcontainer{
+    padding: 12px;
+}
+
+.skill{
+    width: 260px;
+    height: 6px;
+    background-color: rgb(196, 48, 196);
+    border: 2px solid black;
+}
+
+.skillitem{
+    padding: 5px;
+    font-family: 'Raleway', sans-serif;
+    margin: 0 12px;
+    font-weight:600;
+    display: flex;
+    align-items: center;
+}
+
+.hundred{
+    width: 265px;
+}
+.fifty{
+    width: 125px;
+}
+.t5{
+    width: 75px;
+}
+
+.sidebargo{
+    transform: translate(-443px,0px);
+    position: absolute;
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.cross{
+    margin-top: 10px;
+    margin-left: 105px;
+}
+
+.ham{
+    margin-top: 10px;
+    width: 40px;
+    height: 28px;
+}
+
+@media (max-width: 700px) {
+    .devpic{
+        display: none;
+    }
+    .intro, .contactform{
+        margin: 50px 8px;
+    }
+    .devinfo{
+        font-size: 16px;
+    }
+    .buttons{
+        font-size: 10px;
+    }
+    /* .sidebar{
+        transform: translate(-443px,0px);
+        position: absolute;
+    } */
+}
+
+/* .fa-linkedin {
+    margin-bottom: 20px;
+    display: block;
+    margin: auto;
+    padding: 20px 0px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa-linkedin:hover {
+    cursor: pointer;
+    opacity: 0.7;
+} */
+
+.socialmed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a i{
+    padding: 0px 20px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+a i:hover{
+    background-color: white;
+    border-radius: 40px;
+}
