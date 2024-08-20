@@ -64,33 +64,30 @@
 .devinfo{
     font-size: 16px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    max-width: 500px;
 }
 .hello{
     font-family: 'Poppins', sans-serif;
-    font-family: 'Raleway', sans-serif;
-    color: white;
     font-size: 4em;
     font-weight: bold;
+    margin-bottom: 10px;
+    animation: fadeInDown 1.5s ease-out;
 }
 
 .hello span{
     color:rgb(209, 115, 209);
 }
 .about{
-    font-family: 'Josefin Sans', sans-serif;
-    /* font-family: 'Poppins', sans-serif;
-    font-family: 'Raleway', sans-serif; */
-    color: rgb(209, 115, 209);
     font-size: 1.8em;
+    margin-bottom: 15px;
+    animation: fadeInUp 1.5s ease-out;
 }
 
 .moreabout{
     font-size: 1.2em;
-    margin-top: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Raleway', sans-serif;
+    margin-bottom: 25px;
+    animation: fadeInLeft 1.5s ease-out;
 }
 .buttons{
     font-family: 'Poppins', sans-serif;
@@ -100,16 +97,16 @@
 }
 
 .btn{
-    padding: 8px;
-    font-weight: bold;
-    font-size: 1em;
+    padding: 10px 20px;
+    font-size: 1.2em;
     border-radius: 25px;
-    font-family: 'Raleway', sans-serif;
-    margin: 0px 15px;
-    cursor: pointer;
-    background-color:rgb(209, 115, 209);
+    background-color: #d173d1;
     color: white;
-    border: 0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 15px;
+    animation: fadeInRight 1.5s ease-out;
 }
 
 .btn:hover{
@@ -117,11 +114,88 @@
     color: black;
 }
 .devpic img{
-    height: 40vh;
-    margin-top: 25px;
+    height: 300px;
+    border-radius: 10px;
+    animation: bounceIn 2s;
 }
 
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 700px) {
+    .devpic {
+        display: none;
+    }
+
+    .infocontainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hamburger img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .main {
+        padding-left: 0;
+    }
+}
 
 .contactform{
     font-size: 20px;
